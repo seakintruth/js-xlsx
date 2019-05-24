@@ -1,35 +1,33 @@
 [ignore]
 .*/node_modules/.*
 .*/dist/.*
-.*/test.js
+.*/tmp/.*
 
 .*/bits/.*
 .*/ctest/.*
 .*/misc/.*
 .*/perf/.*
+.*/_book/.*
 
 .*/demo/browser.js
 .*/shim.js
 
-.*/odsbits/.*
-.*/ods.js
 .*/xlsx.js
 .*/xlsxworker.js
-.*/xlsxworker1.js
-.*/xlsxworker2.js
 .*/jszip.js
 .*/tests/.*
+.*/demos/.*
 
-.*/xlsx.flow.js
+#.*/xlsx.flow.js
 [include]
 xlsxworker.flow.js
-xlsxworker1.flow.js
-xlsxworker2.flow.js
-ods.flow.js
+xlsx.flow.js
 .*/bin/.*.njs
 .*/demo/browser.flow.js
+test.js
 
 [libs]
+bits/09_types.js
 misc/flow.js
 misc/flowdeps.js
 
@@ -37,3 +35,4 @@ misc/flowdeps.js
 module.file_ext=.js
 module.file_ext=.njs
 module.ignore_non_literal_requires=true
+suppress_comment= \\(.\\|\n\\)*\\$FlowIgnore
